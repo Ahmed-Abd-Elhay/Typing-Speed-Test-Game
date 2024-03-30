@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>Typing Speed Test</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="name">Typing Speed Test Game</div>
+        <div class="game">
+            <div class="message">Level Is
+                <select class="level">
+                    <option value="easy">Easy</option>
+                    <option value="normal">Normal</option>
+                    <option value="hard">Hard</option>
+                </select> & You Have <span class="seconds"></span> Seconds To Type The Word
+            </div>
+            <div class="start">Start Game</div>
+            <div class="word"></div>
+            <input type="text" class="input">
+            <div class="upcoming-word">Word Wil Show Here</div>
+            <div class="controal">
+                <div class="time">Time Left: <span></span> Second</div>
+                <div class="score">Score: <span class="get">0</span> From <span class="total"></span></div>
+            </div>
+            <div class="finish"></div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

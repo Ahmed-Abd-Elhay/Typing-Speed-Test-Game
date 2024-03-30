@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    background-color: #eee;
+    height: 100vh;
+}
+
+.container .name {
+    text-align: center;
+    padding: 35px;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    background-color: #323437;
+}
+
+.container .game {
+    width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.container .game .message {
+    padding: 24px 0;
+    background-color: white;
+    border-radius: 6px;
+    font-size: 21px;
+    font-weight: bold;
+    color: navy;
+}
+
+.container .game .message .level {
+    color: #0066ff;
+    font-size: 20px;
+    border: 2px solid blue;
+    border-radius: 6px;
+    padding: 4px;
+    text-align: center;
+}
+
+.container .game .message .level:focus {
+    outline: none;
+}
+
+
+.container .game .message .seconds {
+    color: #0066ff;
+}
+
+.container .game .message .seconds::before {
+    content: "[ ";
+    color: blue;
+}
+
+.container .game .message .seconds::after {
+    content: " ]";
+    color: blue;
+}
+
+.container .game .start {
+    margin: 20px 0;
+    padding: 25px;
+    background-color: navy;
+    border-radius: 6px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.container .game .start:hover {
+    background-color: blue;
+}
+
+.container .game .word {
+    font-size: 53px;
+    font-weight: bold;
+    color: #1565C0;
+    margin: 25px 0px;
+}
+
+.container .game .input {
+    width: 100%;
+    padding: 18px;
+    border-radius: 6px;
+    border: 2px solid #1565C0;
+    margin: 20px 0;
+    display: block;
+    caret-color: #1565C0;
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.container .game .input:focus {
+    outline: none;
+}
+
+.container .game .upcoming-word {
+    display: flex;
+    padding: 21px;
+    background-color: white;
+    border-radius: 6px;
+    justify-content: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.container .game .upcoming-word div {
+    margin: 5px;
+    background-color: #1565c0;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+.container .game .controal {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.container .game .controal .time {
+    font-size: 20px;
+    color: navy;
+}
+
+.container .game .controal .time span {
+    font-size: 20px;
+    color: #1565c0;
+}
+
+.container .game .controal .time span::before {
+    content: "[ ";
+    color: blue;
+}
+
+.container .game .controal .time span::after {
+    content: " ]";
+    color: blue;
+}
+
+.container .game .controal .score {
+    font-size: 20px;
+    color: navy;
+}
+
+.container .game .controal .score .get {
+    font-size: 20px;
+    color: #1565c0;
+}
+
+.container .game .controal .score .get::before {
+    content: "[ ";
+    color: blue;
+}
+
+.container .game .controal .score .get::after {
+    content: " ]";
+    color: blue;
+}
+
+.container .game .controal .score .total {
+    font-size: 20px;
+    color: #1565C0;
+}
+
+.container .game .controal .score .total::before {
+    content: "[ ";
+    color: blue;
+}
+
+.container .game .controal .score .total::after {
+    content: " ]";
+    color: blue;
+}
+
+.container .game .finish.active {
+    position: fixed;
+    background-color: #eeeeeed9;
+    font-size: 70px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px 0px;
+    width: 100%;
+    height: 100%;
+    top: -20px;
+    left: 0;
+}
+
+.container .game .finish .good {
+    color: #0066ff;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #eeeeeeed;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container .game .finish .bad {
+    color: red;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #eeeeeeed;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container .game .finish .reload {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #283593;
+    background-color: #1565C0;
+    color: white;
+    margin: 30px 0;
+    transition: .4s;
+}
+
+.container .game .finish .reload:hover {
+    background-color: #2a82e7;
+    border: 2px solid #2a82e7;
+
+}
